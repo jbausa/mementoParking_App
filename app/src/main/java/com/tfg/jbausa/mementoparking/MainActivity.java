@@ -2,48 +2,16 @@ package com.tfg.jbausa.mementoparking;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
-import android.content.Context;
 import android.content.Intent;
-import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
-import android.webkit.CookieManager;
-import android.webkit.WebChromeClient;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
-
-import android.annotation.SuppressLint;
-import android.annotation.TargetApi;
-import android.content.Context;
-import android.net.ConnectivityManager;
-import android.os.Build;
-import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
-import android.webkit.CookieManager;
-import android.webkit.WebChromeClient;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
+import android.support.v7.app.AppCompatActivity;
 
 @TargetApi(Build.VERSION_CODES.LOLLIPOP)
 @SuppressLint("SetJavaScriptEnabled")
-public class MainActivity extends ActionBarActivity {
-    /*
-     * Variables iniciales
-     */
-    private static WebView myWebView;
-    private CookieManager cookieManager;
-    public static WebView getMyWebView() {
-        return myWebView;
-    }
+public class MainActivity extends AppCompatActivity {
 
-
-    @SuppressLint("NewApi")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
